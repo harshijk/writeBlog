@@ -12,6 +12,7 @@ export const Header = () => {
       console.log(results);
       setIsAuth(true)
       localStorage.setItem("isAuth",true)
+      window.location.reload(true)
     }).catch(error=>{
       console.log(error)
     })
@@ -22,6 +23,7 @@ export const Header = () => {
       console.log("User logged out")
       setIsAuth(false)
       localStorage.setItem("isAuth",false)
+      window.location.reload(true)
 
 
     })
